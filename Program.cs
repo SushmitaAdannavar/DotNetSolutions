@@ -1,33 +1,21 @@
 ﻿using System;
-using System.Reflection.PortableExecutable;
 
-namespace ConsoleApp3
+namespace ConsoleApp5
 {
-    class Program
+    internal class Program
     {
-        
         static void Main(string[] args)
         {
-            /*rectangle rect1 = new rectangle();
-            rectangle rect2 = new rectangle(4,6);
-            rectangle rect4 = new rectangle(rect2);*/
-            /*Iaddition a;
-            a = new add1();
-            a.add();
-            a = new add2();
-            a.add();
-            accessmodifiers am = new accessmodifiers();
-            am.a = 10;
-            protectedaccessmodifier pm = new protectedaccessmodifier();
-            pm.b = 10;*/
-            //weekday.dayname();
-            // power.powerof2();
-            /* sum sm = new sum();
-             sm.sumof();*/
-            /*string1 str = new string1();
-            str.strrev();*/
-            Flipcoin fp = new Flipcoin();
-            fp.headstails();
+            /*int[] intarray = { 1, 2, 3 };
+            double[] doublearray = { 1.8, 2.3, 3.4 };
+            generics gn = new generics();
+            gn.displayelements(intarray);
+            Console.WriteLine();
+            gn.displayelements(doublearray);*/
+
+            generics2<int> inttype = new generics2<int>(1);
+            generics2<double> doubletype = new generics2<double>(1.7);
+            generics2<string> stringtype = new generics2<string>("string value");
 
         }
     }
