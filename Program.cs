@@ -1,21 +1,33 @@
 ﻿using System;
 
-namespace ConsoleApp5
+namespace Data_structures
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            /*int[] intarray = { 1, 2, 3 };
-            double[] doublearray = { 1.8, 2.3, 3.4 };
-            generics gn = new generics();
-            gn.displayelements(intarray);
-            Console.WriteLine();
-            gn.displayelements(doublearray);*/
+             LinkedList linkedlist = new LinkedList();
+             linkedlist.AddNodeAtFront(3);
+            linkedlist.AddNodeAtFront(5);
+           linkedlist.AddNodeAtLast(10);
+           linkedlist.AddNodeAtFront(12);
+            linkedlist.AddNodeAtLast(17);
+            linkedlist.AddNodeAtPosition(2, 78);
+            linkedlist.AddNodeAtPosition(1, 32);
+             linkedlist.DeleteAtfirst();
+             linkedlist.DeleteAtLast();
+             linkedlist.DeleteAtPos(3);
+            /*stack Stack = new stack();
+            Stack.push(3);
+            Stack.push(5);
+            Stack.push(7);
+            Stack.push(9);
+            Stack.push(12);
+            Stack.display();
+            Stack.pop();
+                Stack.display();*/
 
-            generics2<int> inttype = new generics2<int>(1);
-            generics2<double> doubletype = new generics2<double>(1.7);
-            generics2<string> stringtype = new generics2<string>("string value");
+
 
         }
     }
