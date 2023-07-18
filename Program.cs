@@ -1,33 +1,21 @@
 ﻿using System;
 
-namespace ConsoleApp4
+namespace ConsoleApp5
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            /*StudentGrade sd1 = new StudentGrade();
-            sd1.Fees();
-            sd1.Grade();*/
-            /*StudentReport sd2 = new StudentReport();
-            sd2.Fees();
-            sd2.Grade();
-            sd2.Marks();*/
-            /*polymorphism ph = new polymorphism();
-            ph.Add(1,2);
-            ph.Add(10.2,11.1,15.6);
-            */
+            /*int[] intarray = { 1, 2, 3 };
+            double[] doublearray = { 1.8, 2.3, 3.4 };
+            generics gn = new generics();
+            gn.displayelements(intarray);
+            Console.WriteLine();
+            gn.displayelements(doublearray);*/
 
-           int a = 10, b = 20;
-            Console.WriteLine(a+" "+b);
-            callbyvalueref sw = new callbyvalueref();
-            sw.swap2(ref a, ref b);
-            
-            Console.WriteLine("Now Values of a and b are " + a + " " + b);
-            sw.swap1(a, b);
-            
-
-            
+            generics2<int> inttype = new generics2<int>(1);
+            generics2<double> doubletype = new generics2<double>(1.7);
+            generics2<string> stringtype = new generics2<string>("string value");
 
         }
     }
